@@ -1,23 +1,76 @@
 package com.example.miguel.egresadosapp;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
-public class Olvidar extends ActionBarActivity {
+public class Olvidar extends ActionBarActivity
+{
+    EditText correoElectronico;
+    Button enviar;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_olvidar);
 
         ActionBar actionBar =getSupportActionBar();
         actionBar.setTitle("Volver");
 
+        correoElectronico = (EditText)findViewById(R.id.editTextOlvidarContra);
+        enviar = (Button)findViewById(R.id.buttonEnviarContra);
 
+        enviar.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                String capCorreo = correoElectronico.getText().toString();
+
+                if (capCorreo.equals(""))
+                {
+                    Toast.makeText(Olvidar.this,"Faltan Datos Por Llenar",Toast.LENGTH_SHORT).show();
+                }
+
+                else
+                {
+
+                }
+            }
+        });
+
+    }
+
+    public void AlertaConfirmacion()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Enviar Mensaje De Recuperacion");
+        builder.setIcon(android.R.drawable.ic_dialog_email);
+        builder.setMessage("¿Enviar Codigo De Recuperacion?");
+        builder.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(Olvidar.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+                //Toast.makeText(Olvidar.this,"Mensa")
+            }
+        });
+
+        builder.setPositiveButton("Cancelar", null);
+        builder.setCancelable(false);
+        builder.show();
     }
 
 

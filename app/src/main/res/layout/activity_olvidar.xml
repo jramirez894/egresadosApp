@@ -29,15 +29,15 @@
             android:textColor="@color/black"
             android:layout_marginTop="20dp"
             android:hint="correo electronico"
-            android:inputType="textEmailAddress"
-            />
+            android:inputType="textEmailAddress" />
 
         <Button
             android:id="@+id/buttonEnviarContra"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/MisBotones"
-            android:text="@string/enviar"/>
+            android:text="@string/enviar"
+            android:layout_marginTop="15dp"/>
 
     </LinearLayout>
 </LinearLayout>
