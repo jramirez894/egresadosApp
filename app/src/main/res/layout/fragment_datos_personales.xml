@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mases"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textTituloDatosPersonales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloDatosPersonales"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinerRegional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:entries="@array/spiner_uno" >
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spinerCentroFormacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/spiner_uno">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/editTextNombre_datos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="@string/nombre"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="@string/apellidos"
+                android:layout_marginTop="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinerTipoDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/spiner_uno">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/editTextNumDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="@string/numeroDoc"
+                android:layout_marginTop="5dp"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/editTextContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="@string/contrasena"
+                android:layout_marginTop="5dp"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/editTextVerificarContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="@string/verificarContra"
+                android:layout_marginTop="5dp"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/editTextFechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="@string/fecha"
+                android:layout_marginTop="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinerSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/spiner_uno">
+            </Spinner>
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/autoCompleteCarrera"
+                android:layout_marginTop="5dp"
+                android:hint="@string/tituloObtenido"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

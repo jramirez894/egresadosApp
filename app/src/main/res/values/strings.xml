@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">egresadosApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_olvidar">Olvidar</string>
+    <string name="title_activity_egres__sies">Egres_Sies</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="iden">Identificación</string>
+    <string name="escribeTuI">Escribe tu identificacón</string>
+    <string name="clave">Clave</string>
+    <string name="entrar">Entrar</string>
+    <string name="escribetuC">Escribe tu contraseña</string>
+    <string name="olvidar">Olvidaste tu contraseña</string>
+    <string name="enviar">Enviar</string>
+    <string name="conf">Configuración cuenta</string>
+    <string name="cerrar">Cerrar Sesion</string>
+    <string name="title_activity_confiuracion">Confiuracion</string>
+    <string name="registro">Registraté</string>
+    <string name="tituloDatosPersonales">Datos personales</string>
+    <string name="title_activity_perfil">Perfil</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="numeroDoc">Número de documento</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="verificarContra">Verificar contraseña</string>
+    <string name="fecha">Fecha nacimiento (aaaa/mm/dd)</string>
+    <string name="tituloObtenido">Título Obtenido</string>
+    <string name="tituloEtapa">Etapa productiva</string>
+    <string name="nombreEmpresa">Nombre de la empresa</string>
+    <string name="cargo">Cargo</string>
+    <string name="idea">¿Tiene Idea de Negocio?</string>
+    <string name="cualidea">Indique una descripción breve de la idea de negocio</string>
+    <string name="guardar">Guardar</string>
+    <string name="nombreContactoF">Nombre contacto familiar</string>
+    <string name="numeroContactoF">Número contacto familiar</string>
+    <string name="numerocontPersonal">Número contacto personal</string>
+    <string name="tituloDatosContacto">Datos de Cóntacto</string>
+    <string name="tituloSugenrecias">Sugerencias</string>
+    <string name="genero">genero</string>
+    <string name="telefono">Telefono</string>
+    <string name="celular">Celular</string>
+    <string name="contPersonal">Nombre contacto personal</string>
+    <string name="TelCont">Número telefono contacto</string>
+    <string name="emailP">Email Principal</string>
+    <string name="emailA">Email Alternativo</string>
+    <string name="direccion">Direccion</string>
+    <string name="barrio">Barrio</string>
+    <string name="continuar">¿Le gustaría continuar su cadena de Formacion?</string>
+    <string name="elegirTitulo">Elige Título</string>
+    <string name="calificar">Como califica su formación</string>
+    
+    <string-array name="spiner_uno">
+        <item>Seleccionado</item>
+        <item>Hola</item>
+    </string-array>
+
+
+
+
+
+</resources>

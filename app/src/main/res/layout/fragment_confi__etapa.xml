@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mases"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textTituloEtapaProductiva_Confi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloEtapa"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinerModalidad_etapa_Confi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/editTextNombreEmpresa_etapa_Confi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinerEstadoLaboral_etapa_Confi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/editTextNombreEmpresaEstado_etapa_Confi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextCargo_etapa_Confi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/idea"
+                android:layout_marginTop="5dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_etapa_Confi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/radio_Si_Confi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si"/>
+
+                <RadioButton
+                    android:id="@+id/radio_No_Confi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editTextCualIdea_Confi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mases"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textTituloDatosContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloDatosContacto"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTelefono_DatosContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/telefono"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/editCelular_DatosContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:hint="@string/celular" />
+
+            <EditText
+                android:id="@+id/editContactoFamiliar_DatosContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:hint="@string/nombreContactoF" />
+
+            <EditText
+                android:id="@+id/editNumeroContacFam_DatosContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/numeroContactoF"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/editContactoPersonal_DatosContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contPersonal"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/editNumeroContacPer_DatosContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/numerocontPersonal"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/editEmailPrincipal_DatosContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/emailP"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/editEmailAlterno_DatosContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/emailA"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/editDirrecion_DatosContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/direccion"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/editBarrio_DatosContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/barrio"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerDepartamento_DatosContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/spiner_uno">
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spinnerCiudad_DatosContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/spiner_uno">
+            </Spinner>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

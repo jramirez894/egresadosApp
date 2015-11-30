@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.miguel.egresadosapp.Confiuracion">
+
+    <item
+        android:id="@+id/guardar"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/save"
+        android:title="@string/guardar"/>
+    <item
+        android:id="@+id/cerrarSesion_Configuracion"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/power"
+        android:title="@string/cerrar"/>
+</menu>

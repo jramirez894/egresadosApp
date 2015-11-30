@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mases"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textTituloEtapaProductiva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloEtapa"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinerModalidad_etapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:entries="@array/spiner_uno">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/editTextNombreEmpresa_etapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="@string/nombreEmpresa"
+                android:layout_marginTop="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinerEstadoLaboral_etapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/spiner_uno">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/editTextNombreEmpresaEstado_etapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="Estado laboral"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextCargo_etapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="@string/cargo"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/idea"
+                android:layout_marginTop="5dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupIdeaNegocio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/radio_Si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si"/>
+
+            <RadioButton
+                android:id="@+id/radio_No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+            <EditText
+                android:id="@+id/editTextCualIdea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="@string/cualidea"
+                android:layout_marginTop="5dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

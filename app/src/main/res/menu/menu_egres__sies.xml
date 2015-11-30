@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.miguel.egresadosapp.Egres_Sies">
+
+    <item
+        android:id="@+id/configuracion_Egres"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/configuracion"
+        android:title="@string/conf"/>
+    <item
+       android:id="@+id/cerrarSesion_Egres"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/power"
+        android:title="@string/cerrar"/>
+
+</menu>

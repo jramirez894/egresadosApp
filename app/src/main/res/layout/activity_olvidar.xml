@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/mases">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewOlvidarCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/olvidar"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editTextOlvidarContra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:hint="correo electronico"
+            android:inputType="textEmailAddress"
+            />
+
+        <Button
+            android:id="@+id/buttonEnviarContra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MisBotones"
+            android:text="@string/enviar"/>
+
+    </LinearLayout>
+</LinearLayout>
